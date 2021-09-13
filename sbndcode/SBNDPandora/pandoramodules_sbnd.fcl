@@ -77,11 +77,15 @@ sbnd_showerlinearenergy:          @local::showerlinearenergy
 sbnd_showerunidirectiondedx:      @local::showerunidirectiondedx
 sbnd_showertrajpointdedx:         @local::showertrajpointdedx
 sbnd_showernumelectronsenergy:    @local::showernumelectronsenergy
+sbnd_showerestarenergy:           @local::showerestarenergy
 sbnd_showerbayesiantrucatingdedx: @local::showerbayesiantrucatingdedx
 
 sbnd_showerlinearenergy.Gradients: [0.00155644, 0.00173915, 0.00153631]
 sbnd_showerlinearenergy.Intercepts: [5.92931, -2.13307, 5.19711]
 sbnd_showernumelectronsenergy.CalorimetryAlg: @local::sbnd_calorimetryalgmc
+sbnd_showerestarenergy.CalorimetryAlg: @local::sbnd_calorimetryalgmc
+sbnd_showerestarenergy.ESTARFname: "ShowerEnergyReco/ESTAREnergyLookupCurve.root"
+sbnd_showerestarenergy.ESTARTGraph: "ESTAR_energy_lookup_curve"
 sbnd_showerunidirectiondedx.CalorimetryAlg:   @local::sbnd_calorimetryalgmc
 sbnd_showertrajpointdedx.CalorimetryAlg:      @local::sbnd_calorimetryalgmc
 sbnd_showerbayesiantrucatingdedx.PriorFname: "PandoraMVAs/ShowerBayesdEdxPriors.root"
