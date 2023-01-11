@@ -1,0 +1,32 @@
+#include "simulationservices_sbnd.fcl"
+#include "backtrackerservice.fcl"
+#include "particleinventoryservice.fcl"
+
+#include "basic_ana.fcl"
+
+process_name: Ana
+
+services:
+{
+  @table::sbnd_services
+  ParticleInventoryService: @local::sbnd_particleinventoryservice
+  BackTrackerService:  	    @local::sbnd_backtrackerservice
+}
+
+source:
+{
+  module_type: RootInput
+}
+
+physics:
+{
+  analyzers:
+  {
+    basicana:	@local::basic_ana
+  }
+
+  ana:       [ basicana ]
+  end_paths: [ ana ]
+}
+
+services.BackTrackerService.BackTracker.SimChannelModuleLabel: "simdrift"

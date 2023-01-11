@@ -42,4 +42,4 @@ physics:
 
 
 services.RawDrawingOptions.MinimumSignal:              10.
-
+services.RawDrawingOptions.HitTimeRMS: 2.

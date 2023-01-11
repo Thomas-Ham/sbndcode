@@ -10,7 +10,7 @@ void geoVis_sbnd(TString volName="volWorld")
 	gSystem->Load("libGeom");
 	gSystem->Load("libGdml");
 
-	TGeoManager::Import("sbnd_v01_01_nowires.gdml");
+	TGeoManager::Import("sbnd_v01_05_nowires.gdml");
 
 drawopt optsbnd[] = {
 	{"volTheBuilding", kYellow-8,0},

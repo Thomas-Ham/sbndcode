@@ -1,0 +1,11 @@
+BEGIN_PROLOG
+
+basic_ana:
+{
+    module_type:			"BasicAnalysis"
+    LArGeantModuleLabel:     		"largeant"
+    SimEnergyDepositsModuleLabel:	"ionandscint"
+    SimEnergyDepositsInstanceLabel:	"priorSCE"
+}    
+
+END_PROLOG

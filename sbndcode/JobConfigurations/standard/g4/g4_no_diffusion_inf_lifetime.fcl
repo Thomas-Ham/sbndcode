@@ -1,0 +1,11 @@
+#include "standard_g4_sbnd.fcl"
+
+services.LArG4Parameters.TransverseDiffusion: 1e-15 #in cm^2/ns
+services.LArG4Parameters.LongitudinalDiffusion: 1e-15 #in cm^2/ns
+
+
+services.DetectorPropertiesService.Electronlifetime:  99999999 #microseconds
+
+services.LArG4Parameters.KeepEMShowerDaughters: true
+
+services.NuRandomService.policy: "perEvent" 
